@@ -10,10 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { nombre: 'Tecnicatura Superior en Textil e Indumentaria', descripcion: 'Sumérgete en la creatividad y el diseño de prendas de vestir. Esta carrera te permitirá explorar el mundo de la moda, desde la conceptualización hasta la confección de prendas únicas y vanguardistas.', documento: 'TextilEIndumentaria.pdf' }
     ];
 
-    // Crear lista de carreras
+    
     const carrerasList = document.createElement('ul');
 
-    // Agregar cada carrera a la lista
     carreras.forEach(carrera => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
@@ -24,6 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
         carrerasList.appendChild(listItem);
     });
 
-    // Agregar la lista al contenido principal
     mainContent.appendChild(carrerasList);
 });
